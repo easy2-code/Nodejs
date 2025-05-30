@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 
 const server = http.createServer((req, res) => {
-  console.log(req.url, req.method);
+  console.log(req.url, req.method); // log the request URL and method in terminal
 
   // set header content type
   res.setHeader("Content-Type", "text/html");
